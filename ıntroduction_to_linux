@@ -1,0 +1,60 @@
+Introduction to Linux
+
+Describe software required and Describe the major Linux distor families
+
+1- Red Hat Family Systems
+2- SUSE FAmily Systems
+3- Debian FAmily Systems
+
+  LINUX KERNEL
+1- Debian (Distro Families)
+  a- Ubuntu (Individual Distros)
+  b - Linux Mint (Individual Distros)
+
+2- RHEL (Distro Families)
+  a-Fedora(Individual Distros)
+    i- CentOS 
+    ii- ORacle lİnux
+
+3- SUSE (Distro Families)
+  a- SLES (Individual Distros)
+  b- openSUSE (Individual Distros)
+
+4- Other Distributions (Distro Families)
+
+
+Key Facts About the Red HAt Family
+  - Fedora an upstream testing platform
+  - CentOS is a close clone of RHEL
+  - Intel x86, Arm, Itanium, POwerPC
+  - yum package manager
+  - Widelyused by enterprises
+
+
+The SUSe Family
+  - SLES is upstream for openSUSE
+  - RPM-bases zypper package manager
+  - YaST for system admin purposes
+
+
+The Debian Family
+  - Debian family is upstream for Ubuntu
+  - DPKG-based APT package manager : APT(UBUNTU, Linux, Kali, linux.veb işletim sistemlerinde yazılım paketlerini kurmak, güncellemek ve kaldırmak için kullanılan en gelişmiş araçtır
+"dpkg based" denmesinin sebebi ise, APT'nin aslında arka planda "dpkg" isimli daha alt seviye bir aracı kullanıyor olmasıdır.
+
+Örnek Senaryo üzerinden aralarındaki İlişki
+dpkg(aşçı): paketi sisteme asıl kuran kişidir. Bilgisayarındaki yerel bir ".deb" dosyasını açar ve dosyaları ilgili yerlere yerleştirir. Ancak çok "inatçıdır"; eğer paketin çalışması için gereken başka bir yazılım(bağımlılık) eksikse, "bu eksik, ben bunu kurmam" der ve durur)
+APT(Garson/Yönetici): sen ona "bana python kur" dersin.O gider internetteki depolara(repository) bakar, Python'ın çalışması için gereken tüm ek paktleri(bağımlılıkları) bulur, hepsini indirir ve sonra "dpkg"'ye "Al bunları sırayla kur" talimatını verir.)
+
+  - Widely used for cloud deployments
+  - GNOME-based but differs visually
+  
+
+
+
+
+
+
+
+
+  

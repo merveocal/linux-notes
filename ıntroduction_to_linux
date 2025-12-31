@@ -5,7 +5,7 @@ Describe software required and Describe the major Linux distor families
 1- Red Hat Family Systems
 2- SUSE FAmily Systems
 3- Debian FAmily Systems
-
+----------------------------------------------------
   LINUX KERNEL
 1- Debian (Distro Families)
   a- Ubuntu (Individual Distros)
@@ -21,7 +21,7 @@ Describe software required and Describe the major Linux distor families
   b- openSUSE (Individual Distros)
 
 4- Other Distributions (Distro Families)
-
+----------------------------------------------------------
 
 Key Facts About the Red HAt Family
   - Fedora an upstream testing platform
@@ -48,9 +48,19 @@ APT(Garson/Yönetici): sen ona "bana python kur" dersin.O gider internetteki dep
 
   - Widely used for cloud deployments
   - GNOME-based but differs visually
-  
+   
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+Linux Terminologly and Examples
 
+Kernel: Glue between hardware and applications form example: Linux kernel
+Distribution: Collection of software making up a Linux-based OS 
+Boot loader
+Service
+Filesystem
+X windows System
+Desktop Environment
+Command line
 
 
 

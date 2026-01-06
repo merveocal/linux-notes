@@ -170,6 +170,83 @@ Partitions in the Lİnux HArd Disk
     * var (sda3)
     * swap(sda4)
 
+------------------------------------
+yazı fikirleri***************************
+libreoffice katkı sağlayabilirsin, iş ilanlarında öne çıkmak 
+linux daki grafik arayüzlerine dair bir şeyler yazabilirsin, 
+YaST opsnSUSE de var ama diğerinde yok
+yast, ubuntu, fedora, arch, linux min...de yok 
+ne için kullanıldığını belirt
+
+ubuntu da yast yoksa ne var iş nasıl işler
+
+synaptic package manager-paket yükleme işlemini terminalden yapmak istemiyorsan bunun için bir program var oraya istediğini yazıyorsun ve kolayca yükleyebiliyorsun(medium yazı fikri)
+
+aşağıda yazacağım şeyler bölüm özeti ama sen bunlar hakkında medium yazısı yazabilirsin
+System Configuration chapter
+- control basic config with system settings
+- linux always uses UTC
+- The Network Time Protocol sets time via Internet
+- The Displays panel configures network settings
+- dpkg & RPM are package management systems
+- Debian distros use dpkg and apt-based utilities
+- RPM was developed by Red Hat
+
+
+---------------------------------------------------------------------------------------------------------------------
+
+COMMAND LİNE OPERATIONS
+
+-->Sisteme yeni bir kullanıcı eklemek için;
+useradd -m -c "merve" -s /ib/bash merve 
+
+some basics utilities
+cat: used to type out file(or combine files)
+head: used to how the first few lines of a file
+tail: used to show the last few lines of a file
+man: used to view documentation
+sudo: süper kullanıcı yetkisine sahiptir, kendi sistemlerinizi kurmanızı sağlar
+
+/etc/sudoers.d/ dizini, linux sistemlerinde hangi kullanıcıların veya grupların yönetici(sudo) yetkilerine sajhip olacağını belirleyen yapılandırma dosyalarının saklandığı özel bir klasördür
+modülerlik: /etc/sudoers klasörü, ana dosyaya dokunmadan her kullanıcı veya uygulama için ayrı bir yetki dosyası oluşturmanıza olanak sağlar.
+
+
+echo "student ALL=(ALL) ALL" > /etc/sudoers.d/student
+echo "student ALL=(ALL) ALL": Bu kısım, tırnak içindeki metni terminale çıktı olarak verir. Bu metin, standart bir sudoers yetkilendirme satırıdır.
+
+student: Yetki verilen kullanıcı adı.
+
+ALL=(ALL): Bu kullanıcının tüm bilgisayarlarda (host) ve tüm kullanıcıların/grupların kimliğine bürünerek işlem yapabileceğini belirtir.
+
+ALL: Her türlü komutu çalıştırabileceği anlamına gelir.
+
+> (Yönlendirme): Sol taraftaki metni, sağda belirtilen dosyanın içine yazar. Eğer dosya varsa üzerine yazar, yoksa yeni oluşturur.
+
+/etc/sudoers.d/student: Yetki dosyasının oluşturulacağı konumdur. Daha önce konuştuğumuz gibi, ana yapılandırma dosyasına dokunmadan modüler yetki eklemek için bu dizin kullanılır.
+
+------------------------------------------------
+
+chmod 440 /etcsudoers.d/student
+chmod (change mode): Dosya veya dizinlerin erişim izinlerini değiştirmek için kullanılan temel komuttur
+Linux'ta dosya izinleri "Sahip-Grup-Diğerleri" şeklinde üçlü bir yapıyla ifade edilir:
+İlk 4 (Sahip): Dosyanın sahibi (genellikle root) dosyayı sadece okuyabilir.
+İkinci 4 (Grup): Dosyanın ait olduğu grup (genellikle root grubu) dosyayı sadece okuyabilir.
+Son 0 (Diğerleri): Sistemdeki diğer hiçbir kullanıcı bu dosyayı okuyamaz, yazamaz ve çalıştıramaz.
+
+---------------------------
+sudo systemctl stop gdm 
+-< bu komutu çalıştırdığınızda masaüstünüz kapanır ve siyaj bir terminal ekranına düşersiniz. servis durduğu için sistem kaynakları (RAM ve CPU) arayüz tarafından tüketilmez
+
+sudo telinit 3
+-> bu komut sistemi .seviyeden(grafik mod) 3.seviyeye(metin modu) düşürür. tüm grafik sevisleri otomatik olarak kapatılır
+
+-> eğer grafik arayüzüne(masaüstüne) geri dönmek istersen şu komutları kullanabilirsin
+sudo systemctl start gdm
+sudo telinit 5
+
+
+
+BASICS OPERATIONS
 
 
 
@@ -177,4 +254,11 @@ Partitions in the Lİnux HArd Disk
 
 
 
-  
+
+
+
+
+
+
+
+

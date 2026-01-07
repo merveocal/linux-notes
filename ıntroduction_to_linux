@@ -171,18 +171,6 @@ Partitions in the Lİnux HArd Disk
     * swap(sda4)
 
 ------------------------------------
-yazı fikirleri***************************
-libreoffice katkı sağlayabilirsin, iş ilanlarında öne çıkmak 
-linux daki grafik arayüzlerine dair bir şeyler yazabilirsin, 
-YaST opsnSUSE de var ama diğerinde yok
-yast, ubuntu, fedora, arch, linux min...de yok 
-ne için kullanıldığını belirt
-
-ubuntu da yast yoksa ne var iş nasıl işler
-
-synaptic package manager-paket yükleme işlemini terminalden yapmak istemiyorsan bunun için bir program var oraya istediğini yazıyorsun ve kolayca yükleyebiliyorsun(medium yazı fikri)
-
-aşağıda yazacağım şeyler bölüm özeti ama sen bunlar hakkında medium yazısı yazabilirsin
 System Configuration chapter
 - control basic config with system settings
 - linux always uses UTC

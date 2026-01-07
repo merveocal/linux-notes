@@ -247,10 +247,92 @@ sudo telinit 5
 
 
 BASICS OPERATIONS
+-mkdir
+-cd
+-login
+-exit
+-man
+-rmdir
+-ls
+-echo
+-cat
+--------------------------------------------------------------------------------------
+
+---> Rebooting and Shutting Down 
+kapatma veya yeniden başlatma işleminde, root erişimi gerekir. 
+shutdown -h   : sistemi tamamen kapatır
+sudo shutdown -h now  : sistemi hemen, tamamen kapatır
+
+shutdown -r : sistemi yeniden başlatır
+sudo shutdown -r now : sistemi hemen kapatır ve yeniden başlatır
+
+Aşağıdaki komut, sistem yöneticilerinin kullanıcıları bilgilendirerek bilgisayarı veya sunucuyu kapatmak için kullandığ tam teşekküllü ve profeyonel bir komuttur
+sudo shutdown -h 10:00 "Shutting down for scheduled maintenance"
 
 
+-->which komutu bir komutun veya programın bilgisayarın içerisinde tam olarak nerede (hangi klasörde) kurulu olduğunu bulmanı sağlar
+which firefox
+
+--> whereis firefox yazdığında, firefox ile ilgili sistemde ne kadar dosya(çalıştırılabilir dosya, yardım dosyası, konfigürasyon) varsa hepsinin göster, der. Daha kapsamlı bir tarama yapar
+
+----> Accessing Directories
+pwd : displays the present working directory
+cd ~   or  cd :  change to your home directory(shortcut name is ~ (tilde))
+cd ..   : change to parent directory (..)
+cd -  : change to previous directory (-  (minus))
+
+--------------------------------------------------------
+
+cd /tmp : sistemin geçici klasörüdür.
 
 
+pushd /tmp
+push direcotry(pushd) : bilgisayar bilimindeki "stack(yığın)" mantığıyl çalışır
+
+örnek senaryo:
+diyelim ki /home/kullanıcı/resimler klasöründesin ve geçici olarak /tmp klasörüne gitmen gerekiyor ama işin bitince tık diye eski yerine dönmek istiyorsan
+adım 1: pushd /tmp yazarson. artık /tmp içindesin
+adım 2: işlerini halledersin
+adım 3: popd komutunu yazarsın
+popd yazdığın an, sistem hafızadaki listeye bakar ve seni otomatik olarak başladığın yer olan /hom/kullanici/resimler klasörüne geri fırlatır
+
+
+cd .. (bir üst klasöre çıkar) : bu komut seni hiyerarşide bir basamak yukarı taşır. şu an nerede olduğunla ilgilenir, nereden geldiğindle ilgilenmez.
+örnek:  /home/merve/images klasöründesin. cd .. dersen seni home/merve klasörüne götürür.
+
+cd - (geldiğin klasöre geri döner) : bu komut seni zamanda geriye götürür. hiyeraerşiye bakmaz, senin geçmişine(bir önceki konumuna) bakar.
+örnek: /home/merve/images klasöründeydin ve doğrudan cd /tmp yazdın. Şimdi cd -dersen seni tekrar /home/merve/images klasörüne fırlatır
+
+---------------------------------------------------------------------------------------------------------------------------------
+
+Understanding Absolute and Relative Paths
+
+
+root directory(/)
+1- boot 
+2- user 
+    a- bin
+    b- lib
+    c- share
+    d- include
+3- etc
+4- home 
+    e-sue 
+        i- .bashrc
+        ii-  .mozilla
+       iii -  Desktop
+       iiii -  Pictures
+                *- family
+                **- hawaii
+                ***- downtown
+                ****- pets
+        -  Music
+    f- fred
+        ivıı- .bashrc
+        ivıııı- Desktop
+        iıx- Docs
+5- dev
+6- proc
 
 
 

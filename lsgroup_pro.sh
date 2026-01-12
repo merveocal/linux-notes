@@ -5,7 +5,7 @@
   # exit 1
 #fi
 
-clear
+#clear
 printf "%-15s | %-6s |%-20s\n" "GROUP NAME" "GID" "CREATION DATE"
 
 awk -F: '$3 >= 1000 && $3 < 65534 {print $1 ":" $3}' /etc/group | while read -r line;do
